@@ -1,108 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bosse Schumacher - Ruby on Rails Developer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bosse Schumacher - Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <header>
+            <h1>Bosse Schumacher</h1>
+            <p>
+                Ruby on Rails Developer | Computational Linguistics Background
+            </p>
+        </header>
 
-<body>
-    <header>
-        <h1>Bosse Schumacher</h1>
-        <p>Aspiring Web Developer | Computational Linguistics Student</p>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hi! I'm aspiring to be a web developer. Studying the intersection of language and technology, I discovered my passion for programming and my interest in building web
-                        applications.</p>
-                    <p style="margin-top: 1rem;">I'm currently on a self-taught journey to become a full-stack web
-                        developer, combining my analytical skills from linguistics with modern web technologies.</p>
-                </div>
-                <div class="about-text">
-                    <p><strong>Background:</strong></p>
-                    <p>· 3 semesters Computational Linguistics at Eberhard Karls Universität Tübingen</p>
-                    <p>· Experience with Java and Python</p>
-                    <p>· Strong Linux system knowledge</p>
-                    <p>· Passion for problem-solving and clean code</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>JavaScript (ES6+)(learning)</li>
-                            <li>React (learning)</li>
-                        </ul>
+        <div class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi! I'm a Ruby on Rails developer. Studying the
+                            intersection of language and technology, I
+                            discovered my passion for programming and my
+                            interest in building web applications.
+                        </p>
+                        <p style="margin-top: 1rem">
+                            I'm on a self-taught journey through the Rails
+                            ecosystem, building real applications — from social
+                            platforms to multi-tenant SaaS — while combining the
+                            analytical skills from linguistics with modern web
+                            development.
+                        </p>
                     </div>
+                    <div class="about-text">
+                        <p><strong>Background:</strong></p>
+                        <p>
+                            · 4 semesters Computational Linguistics at Eberhard
+                            Karls Universität Tübingen
+                        </p>
+                        <p>
+                            · Self-taught in Ruby on Rails via The Odin Project
+                            curriculum
+                        </p>
+                        <p>· Strong Linux system knowledge</p>
+                        <p>· Passion for problem-solving and clean code</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills & Technologies</h2>
+                <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Backend</h3>
                         <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>Node.js (learning)</li>
-                            <li>REST APIs (learning)</li>
+                            <li>Ruby on Rails (7 & 8)</li>
+                            <li>PostgreSQL</li>
+                            <li>Devise (authentication)</li>
+                            <li>Service Objects</li>
+                            <li>Solid Queue</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Tools & Others</h3>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Hotwire (Turbo & Stimulus)</li>
+                            <li>Turbo Frames & Streams</li>
+                            <li>Tailwind CSS v4</li>
+                            <li>HTML5 & CSS3</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & DevOps</h3>
                         <ul>
                             <li>Git & GitHub</li>
+                            <li>Kamal (deployment)</li>
                             <li>Linux Systems</li>
                             <li>Command Line</li>
                         </ul>
                     </div>
                 </div>
-        </section>
+            </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="projects-card">
-                    <div class="project-image">TBD</div>
-                    <div class="project-content">
-                        <h3>These projects have been built within "The Odin Project"'s course on web development.</h3>
-                        <div class="project-links">
-                            <a href="" class="btn btn-secondary" target="_blank">COMING SOON</a>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">📱</div>
+                        <div class="project-content">
+                            <h3>Odinbook</h3>
+                            <p>
+                                A social media clone built with Rails 8.1 and
+                                PostgreSQL as part of The Odin Project
+                                curriculum. Features Follow, Like, and Comment
+                                functionality with Turbo Frame integration for
+                                inline interactions, styled with Tailwind CSS
+                                v4.
+                            </p>
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/bosseschum/odinbook"
+                                    class="btn btn-secondary"
+                                    target="_blank"
+                                    >COMING SOON</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">🏢</div>
+                        <div class="project-content">
+                            <h3>Kontova</h3>
+                            <p>
+                                A multi-tenant Rails application built with
+                                Devise, service objects, Turbo, and Solid Queue
+                                for background processing, deployed with Kamal
+                                on Hetzner.
+                            </p>
+                            <div class="project-links">
+                                <a
+                                    href="showcase.kontova.de"
+                                    class="btn btn-secondary"
+                                    target="_blank"
+                                    >COMING SOON</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">🗺️</div>
+                        <div class="project-content">
+                            <h3>Rails Atlas</h3>
+                            <p>
+                                A Rails tooling project that uses AST parsing to
+                                analyze and map out Rails codebases.
+                            </p>
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/bosseschum/rails-atlas"
+                                    class="btn btn-secondary"
+                                    target="_blank"
+                                    >COMING SOON</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <p>I'm currently looking for opportunities as a Junior Web Developer. Feel free to reach out!</p>
-                <p>Email: <a href="mailto:mail@bschum.de">mail@bschum.de</a></p>
-                <p>GitHub: <a href="https://github.com/bosseschum" target="_blank">github.com/bosseschum</a></p>
-            </div>
-        </section>
-    </div>
+            <section id="contact">
+                <h2>Get In Touch</h2>
+                <div class="contact-info">
+                    <p>
+                        I'm currently looking for opportunities as a Junior Ruby
+                        on Rails Developer. Feel free to reach out!
+                    </p>
+                    <p>
+                        Email:
+                        <a href="mailto:mail@bschum.de">mail@bschum.de</a>
+                    </p>
+                    <p>
+                        GitHub:
+                        <a href="https://github.com/bosseschum" target="_blank"
+                            >github.com/bosseschum</a
+                        >
+                    </p>
+                </div>
+            </section>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 Bosse Schumacher. Built in Neovim using HTML & CSS</p>
-    </footer>
-</body>
-
+        <footer>
+            <p>
+                &copy; 2026 Bosse Schumacher. Built in Neovim using HTML & CSS
+            </p>
+        </footer>
+    </body>
 </html>
