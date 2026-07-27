@@ -4,28 +4,66 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bosse Schumacher - Ruby on Rails Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
         <header>
-            <h1>Bosse Schumacher</h1>
-            <p>
-                Ruby on Rails Developer | Computational Linguistics Background
-            </p>
+            <div class="header-inner">
+                <p class="eyebrow">Portfolio &middot; Drawing Set</p>
+                <h1>Bosse Schumacher</h1>
+                <p class="role">
+                    Ruby on Rails Developer | Computational Linguistics
+                    Background
+                </p>
+                <div class="meta-strip">
+                    <div>
+                        <span class="label">Scale</span>
+                        <span class="value">1 : 1</span>
+                    </div>
+                    <div>
+                        <span class="label">Status</span>
+                        <span class="value">Open to work</span>
+                    </div>
+                    <div>
+                        <span class="label">Stack</span>
+                        <span class="value">Rails 8 / Hotwire</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#about"><span class="tab-num">01</span>About</a>
+                </li>
+                <li>
+                    <a href="#skills"><span class="tab-num">02</span>Skills</a>
+                </li>
+                <li>
+                    <a href="#projects"
+                        ><span class="tab-num">03</span>Projects</a
+                    >
+                </li>
+                <li>
+                    <a href="templates/index.html"
+                        ><span class="tab-num">04</span>Templates</a
+                    >
+                </li>
+                <li>
+                    <a href="#contact"
+                        ><span class="tab-num">05</span>Contact</a
+                    >
+                </li>
             </ul>
         </nav>
 
         <div class="container">
             <section id="about">
+                <p class="eyebrow">Sheet 01</p>
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
@@ -44,28 +82,33 @@
                         </p>
                     </div>
                     <div class="about-text">
-                        <p><strong>Background:</strong></p>
-                        <p>
-                            · 4 semesters Computational Linguistics at Eberhard
-                            Karls Universität Tübingen
+                        <strong>Background</strong>
+                        <p class="spec-line">
+                            &middot; Computational Linguistics at Eberhard Karls
+                            Universität Tübingen
                         </p>
-                        <p>
-                            · Self-taught in Ruby on Rails via The Odin Project
-                            curriculum
+                        <p class="spec-line">
+                            &middot; Self-taught in Ruby on Rails via The Odin
+                            Project curriculum
                         </p>
-                        <p>· Strong Linux system knowledge</p>
-                        <p>· Passion for problem-solving and clean code</p>
+                        <p class="spec-line">
+                            &middot; Strong Linux system knowledge
+                        </p>
+                        <p class="spec-line">
+                            &middot; Passion for problem-solving and clean code
+                        </p>
                     </div>
                 </div>
             </section>
 
             <section id="skills">
-                <h2>Skills & Technologies</h2>
+                <p class="eyebrow">Sheet 02</p>
+                <h2>Skills &amp; Technologies</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Backend</h3>
                         <ul>
-                            <li>Ruby on Rails (7 & 8)</li>
+                            <li>Ruby on Rails (7 &amp; 8)</li>
                             <li>PostgreSQL</li>
                             <li>Devise (authentication)</li>
                             <li>Service Objects</li>
@@ -75,16 +118,16 @@
                     <div class="skill-category">
                         <h3>Frontend</h3>
                         <ul>
-                            <li>Hotwire (Turbo & Stimulus)</li>
-                            <li>Turbo Frames & Streams</li>
+                            <li>Hotwire (Turbo &amp; Stimulus)</li>
+                            <li>Turbo Frames &amp; Streams</li>
                             <li>Tailwind CSS v4</li>
-                            <li>HTML5 & CSS3</li>
+                            <li>HTML5 &amp; CSS3</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Tools & DevOps</h3>
+                        <h3>Tools &amp; DevOps</h3>
                         <ul>
-                            <li>Git & GitHub</li>
+                            <li>Git &amp; GitHub</li>
                             <li>Kamal (deployment)</li>
                             <li>Linux Systems</li>
                             <li>Command Line</li>
@@ -94,36 +137,60 @@
             </section>
 
             <section id="projects">
+                <p class="eyebrow">Sheet 03</p>
                 <h2>Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image"><img src="assets/kontova.png" alt="Project Image"></div>
+                        <div class="project-image">
+                            <img
+                                src="assets/kontova.png"
+                                alt="Kontova project screenshot"
+                            />
+                        </div>
                         <div class="project-content">
                             <h3>Kontova</h3>
                             <p>
                                 A multi-tenant Rails application built with
                                 Devise, service objects, Turbo, and Solid Queue
                                 for background processing, deployed with Kamal
-                                on Hetzner. <br>
-                                    Log in with:<br>
-                                <ul>
-                                    <li><span>demo@kontova.de or inventory@kontova.de</span></li>
-                                    <li><span>demo1234</span></li>
-                                    <li><span>0000</span></li>
-                                </ul>
+                                on Hetzner.
                             </p>
+                            <p style="margin-bottom: 0.4rem">Log in with:</p>
+                            <ul>
+                                <li>demo@kontova.de or inventory@kontova.de</li>
+                                <li>demo1234</li>
+                                <li>0000</li>
+                            </ul>
                             <div class="project-links">
                                 <a
                                     href="showcase.kontova.de"
-                                    class="btn btn-secondary"
+                                    class="btn"
                                     target="_blank"
-                                    >Kontova</a
+                                    >Live demo</a
                                 >
                             </div>
                         </div>
+                        <div class="project-title-block">
+                            <div>
+                                <span class="label">Stack</span>
+                                <span class="value"
+                                    >Rails / Devise / Kamal</span
+                                >
+                            </div>
+                            <div>
+                                <span class="label">Status</span>
+                                <span class="value">Live</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="project-card">
-                        <div class="project-image"><img src="assets/atlas.png" alt="Project Image"></div>
+                        <div class="project-image">
+                            <img
+                                src="assets/atlas.png"
+                                alt="Rails Atlas project screenshot"
+                            />
+                        </div>
                         <div class="project-content">
                             <h3>Rails Atlas</h3>
                             <p>
@@ -139,9 +206,25 @@
                                 >
                             </div>
                         </div>
+                        <div class="project-title-block">
+                            <div>
+                                <span class="label">Stack</span>
+                                <span class="value">Ruby / AST parsing</span>
+                            </div>
+                            <div>
+                                <span class="label">Status</span>
+                                <span class="value">Repo</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="project-card">
-                        <div class="project-image"><img src="assets/odinbook.png" alt="Project Image"></div>
+                        <div class="project-image">
+                            <img
+                                src="assets/odinbook.png"
+                                alt="Odinbook project screenshot"
+                            />
+                        </div>
                         <div class="project-content">
                             <h3>Odinbook</h3>
                             <p>
@@ -161,33 +244,48 @@
                                 >
                             </div>
                         </div>
+                        <div class="project-title-block">
+                            <div>
+                                <span class="label">Stack</span>
+                                <span class="value">Rails 8.1 / Tailwind</span>
+                            </div>
+                            <div>
+                                <span class="label">Status</span>
+                                <span class="value">In progress</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="contact">
+                <p class="eyebrow">Sheet 04</p>
                 <h2>Get In Touch</h2>
                 <div class="contact-info">
-                    <p>
+                    <p class="lead">
                         I'm currently looking for opportunities as a Junior Ruby
                         on Rails Developer. Feel free to reach out!
                     </p>
-                    <p>
-                        Email:
-                        <a href="mailto:mail@bschum.de">mail@bschum.de</a>
-                    </p>
-                    <p>
-                        GitHub:
-                        <a href="https://github.com/bosseschum" target="_blank"
-                            >github.com/bosseschum</a
-                        >
-                    </p>
+                    <div class="stamp-fields">
+                        <div>
+                            <span class="label">Email</span>
+                            <a href="mailto:mail@bschum.de">mail@bschum.de</a>
+                        </div>
+                        <div>
+                            <span class="label">GitHub</span>
+                            <a
+                                href="https://github.com/bosseschum"
+                                target="_blank"
+                                >github.com/bosseschum</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
 
         <footer>
-            <p>&copy; 2026 Bosse Schumacher</p>
+            <p>&copy; 2026 Bosse Schumacher &middot; Sheet 04 of 04</p>
         </footer>
     </body>
 </html>
