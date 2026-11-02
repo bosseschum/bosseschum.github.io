@@ -1,6 +1,5 @@
 /* ==========================================================================
    Catppuccin Mocha Palette & Variables
-   Inspired by favicon-bs.svg (#1e1e2e base, #cba6f7 mauve, #f5c2e7 pink)
    ========================================================================== */
 
 :root {
@@ -68,7 +67,7 @@ html {
 }
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-sans), serif;
     line-height: 1.65;
     color: var(--text-primary);
     background-color: var(--bg-main);
